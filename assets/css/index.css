@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* Reset de margens e preenchimentos padrões */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#marca {
+    max-width: 400px;  /* Ajuste o valor para o tamanho ideal da logo */
+    height: auto;  /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto;  /* Centraliza a logo horizontalmente */
+}
+
+/* Media Queries para responsividade */
+
+@media (max-width: 768px) {
+    #marca {
+        max-width: 300px;  /* Ajusta o tamanho da logo em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #marca {
+        max-width: 200px;  /* Ajusta o tamanho da logo em telas muito pequenas */
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+    }
+
+    .image {
+        max-width: 300px;
+    }
+
+    .info h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .info h2 {
+        font-size: 1.2em;
+    }
+}
